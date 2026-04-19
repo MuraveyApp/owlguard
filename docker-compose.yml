@@ -1,0 +1,9 @@
+services:
+  owlguard:
+    build: .
+    ports:
+      - "8800:8800"
+    env_file: .env
+    restart: unless-stopped
+    volumes:
+      - ../charwiz/src:/app/charwiz/src:ro

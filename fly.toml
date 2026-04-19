@@ -1,0 +1,9 @@
+app = "owlguard"
+
+[build]
+
+[http_service]
+  internal_port = 8800
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
